@@ -1,0 +1,24 @@
+-- Pet Store List
+
+CREATE TABLE store_items (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER, price INTEGER, animal TEXT); 
+INSERT INTO store_items VALUES (1, "Dog Food", 70, 4, 35, "canine");
+INSERT INTO store_items VALUES (2, "Dog Toys", 25, 1, 5, "canine"); 
+INSERT INTO store_items VALUES (3, "Dog Treats", 15, 2, 10, "canine");
+INSERT INTO store_items VALUES (4, "Dog Leash", 11, 3, 7, "canine" );
+INSERT INTO store_items VALUES (5, "Dog Shampoo", 10, 3, 10, "canine");
+INSERT INTO store_items VALUES (6, "Cat Litter", 15, 8, 15, "feline");
+INSERT INTO store_items VALUES (7, "Cat Food", 23, 7, 35, "feline");
+INSERT INTO store_items VALUES (8, "Cat Shampoo", 10, 8,10, "feline");
+INSERT INTO store_items VALUES (9, "Cat Toys", 15, 1, 5, "feline");
+INSERT INTO store_items VALUES (10, "Dog shirts", 5, 3, 20, "canine");
+INSERT INTO store_items VALUES (11, "Cat bows", 7,3,7, "feline");
+INSERT INTO store_items VALUES (12, "Dog Bed", 5, 10, 45, "canine");
+INSERT INTO store_items VALUES (13, "Cat Bed", 4,10,35, "feline");
+INSERT INTO store_items VALUES (14, "Cat Medicine", 9,6,15, "feline");
+INSERT INTO store_items VALUES (15, "Dog Medicine", 8,6,15, "canine");
+SELECT * FROM store_items;
+
+--display the database ordered by price
+SELECT * FROM store_items
+ORDER BY price desc; 
+
